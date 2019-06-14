@@ -88,7 +88,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'newsbookmark2',
         'USER': 'newsbookmark2',
-        'PASSWORD': 'suahn15123qwe',
+        'PASSWORD': '',
         'HOST': 'newsbookmark2.cgzfhgpoy2km.ap-northeast-2.rds.amazonaws.com',
         'PORT': '3306',
     }
