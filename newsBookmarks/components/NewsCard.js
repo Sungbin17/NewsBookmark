@@ -31,6 +31,7 @@ class NewsCard extends React.Component {
             this.props.remove_bookmark(this.props.result.headline, this.props.result.web_url, this.props.result.pub_date, this.props.result.image_url, this.props.auth.token, 'remove');
             this.setState({bookmarked: !this.state.bookmarked})
         } else {
+            // console.log(this.props.auth.token)
             this.props.add_bookmark(this.props.result.headline, this.props.result.web_url, this.props.result.pub_date, this.props.result.image_url, this.props.auth.token);
             this.setState({bookmarked: !this.state.bookmarked})
         }

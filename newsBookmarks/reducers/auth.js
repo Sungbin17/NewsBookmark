@@ -12,6 +12,7 @@ export default function auth(state = initialState, action) {
         case 'LOGIN_SUCCESSFUL':
         case 'USER_LOADED':
         case 'REGISTRATION_SUCCESSFUL':
+            console.log(action.data)
             try {
                 AsyncStorage.setItem("userToken", action.data.token)
             } catch {

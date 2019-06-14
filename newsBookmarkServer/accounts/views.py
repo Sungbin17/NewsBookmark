@@ -25,10 +25,9 @@ class RegistrationAPI(generics.GenericAPIView):
         token = jwt_encode_handler(payload)
         user.token = token
         user.save()
-        return Response({
-            "user": UserSerializer(user, context=self.get_serializer_context()).data,
-            "token": token
-        })
+        response = {'token': user.token, 'isAuthenticated': True,
+                    'user': {'user_id': user.id, 'email': user.email, 'name': user.name}}
+        return Response(response)
 
 
 # 유저가 로그인할 때 사용되는 API

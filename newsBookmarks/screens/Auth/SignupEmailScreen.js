@@ -31,9 +31,10 @@ class SignupEmailScreen extends React.Component {
         let password = this.state.password;
         if (name.length > 0 && email.length > 0 && password.length > 0) {
             await this.props.register(name, email, password);
+            await this.props.login(email, password);
             const auth = this.props.auth;
             if (auth.isAuthenticated){
-                this.props.navigation.navigate('Main')
+                this.props.navigation.navigate('AuthLoading')
             }
         } else {
             alert('Field cannot be blank')
@@ -94,6 +95,9 @@ const mapDispatchToProps = dispatch => {
             return dispatch(auth.register(name, email, password))
         },
 
+        login: (email, password) => {
+            return dispatch(auth.login(email, password))
+        },
     };
 };
 
