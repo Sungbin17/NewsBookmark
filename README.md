@@ -1,5 +1,6 @@
 # NewsBookmark
 
+>>>>>>> a649f92bbbe9c33d78511b83700c2b8ccf3fe26f
 코드 돌리는 방법은 newsBookmark 로 이동하신 다음 yarn -> yarn start 하시면
 expo 가 열리고 expo에서 ios simulator 돌리면 됩니다.
 
