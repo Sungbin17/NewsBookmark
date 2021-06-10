@@ -9,7 +9,7 @@ cfn-flip==1.2.0
 chardet==3.0.4
 Click==7.0
 cryptography==2.6.1
-Django==2.1.7
+Django==2.2.24
 django-cors-headers==2.5.3
 django-rest-auth==0.9.5
 djangorestframework==3.9.3
